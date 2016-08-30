@@ -1,2 +1,2 @@
-# crazy123frog.github.io
+# wyattwismer.github.io
 Used for hosting my projects.
