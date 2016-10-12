@@ -62,10 +62,67 @@
         <div style="margin:auto;text-align:center">
             <p><kbd>W</kbd><span class="glyphicon glyphicon-chevron-right"></span>up <kbd>A</kbd><span class="glyphicon glyphicon-chevron-right"></span>left <kbd>S</kbd><span class="glyphicon glyphicon-chevron-right"></span>down <kbd>D</kbd><span class="glyphicon glyphicon-chevron-right"></span>right <kbd>Q</kbd><span class="glyphicon glyphicon-chevron-right"></span>up level <kbd>E</kbd><span class="glyphicon glyphicon-chevron-right"></span>down level <kbd>Spacebar</kbd><span class="glyphicon glyphicon-chevron-right"></span>create/destroy</p>
         </div>
+        <div style="margin:auto;text-align:center">
+            <a data-toggle="modal" data-target="#myModal">Help</a>
+        </div>
 
     </div>
 </div>
 
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">IsoRender</h3>
+            </div>
+            <div class="modal-body">
+                <h4>What is this?</h4>
+                <hr>
+                <p>IsoRender is an in-browser application that allows you to edit a <kbd>5x5x5</kbd> collection of cubes.</p>
+                </br>
+                <h4>I tried pressing a few keys but how do I actually edit my object? </h4>
+                <hr>
+                <table class="table">
+                    <tr>
+                        <tr>In IsoRender you edit your isometric object with a selector. The selector starts in the back corner of the cube and has 4 states.</tr>
+                        <td>
+                            <table class="table">
+                                <tr>
+                                    <td></td>
+                                    <th>Block</th>
+                                    <th>No-Block</th>
+                                </tr>
+                                <tr>
+                                    <th>Covered</th>
+                                    <td>Grey Block</td>
+                                    <td>Grey Outline</td>
+                                </tr>
+                                <tr>
+                                    <th>Uncovered</th>
+                                    <td>Bright Block</td>
+                                    <td>See-through Block</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+                <p> <kbd>W,A,S,D,Q,E</kbd> lets you move your selector around and pressing the <kbd>Spacebar</kbd> will toggle the state of your currently selected block.</p>
+                </br>
+                <h4>What does a code do?</h4>
+                <hr>
+                <p>You can think of a code as a <i>save file</i> for your object. With it you or anyone can else can recreate the object the code was generated from.</p>
+                <p><b>Create Code</b> generates a code from the current state of the object.</p>
+                <p><b>Enter Code</b> creates an object from the data stored in a given code.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script type="text/javascript" src="index.js"></script>
 
