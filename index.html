@@ -1,39 +1,205 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
-<script type="text/javascript" src="script.js"></script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="theme.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Wyatt Wismer</title>
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-<div class="jumbotron text-center">
-  <h1>wyattwismer.me</h1>
-</div>
-<div class="row">
-  <div class="col-sm-3"></div>
-  <div class="col-sm-2"><div class="img-thumbnail" style="background-image: url('iso1.png');background-size: contain;"><a href="IsoRender/isoRender.html"><div><img src="iso2.png" class="img-responsive"></div></a><center class = "img-rounded">IsoRender</center></div></div>
-  <div class="col-sm-2"><div class="img-thumbnail" style="background-image: url('textToImage.png');background-size: contain;"><a href="TextToImage/textToImage.html"><div><img src="textToImage.png" class="img-responsive"></div></a><center class = "img-rounded">Text To Image</center></div></div>
-  <div class="col-sm-2"><div class="img-thumbnail" style="background-image: url('gemGame.png');background-size: contain;"><a href="GemGame/gemGame.html"><img src="gemGame.png" class="img-responsive"></a><center class = "img-rounded">Gem Game</center></div></div>
-  <div class="col-sm-3"></div>
-</div>
-</br>
-<div class="row">
-  <div class="col-sm-4"></div>
-  <div class="col-sm-2"><div class="img-thumbnail" style="background-image: url('jazzAI.png');background-size: contain;"><a href="JazzAI/jazzAI.html"><img src="jazzAI.png" class="img-responsive"></a><center class = "img-rounded">Jazz AI</center></div></div>
-  <div class="col-sm-2"><div class="img-thumbnail" style="background-image: url('spaceDust.png');background-size: contain;"><a href="SpaceDust/spaceDust.html"><img src="spaceDust.png" class="img-responsive"></a><center class = "img-rounded">Space Dust</center></div></div>
-  <div class="col-sm-3"></div>
-</div>
-<!-- </br>
-<div class="row">
-  <div class="col-sm-3"></div>
-  <div class="col-sm-2"><div class="img-thumbnail" style="background-image: url('testback.jpg');"><a href="http://www.google.com"><img src="test.jpg" class="img-responsive"></a><center>Cool Project #7</center></div></div>
-  <div class="col-sm-2"><div class="img-thumbnail" style="background-image: url('testback.jpg');"><a href="http://www.google.com"><img src="test.jpg" class="img-responsive"></a><center>Cool Project #8</center></div></div>
-  <div class="col-sm-2"><div class="img-thumbnail" style="background-image: url('testback.jpg');"><a href="http://www.google.com"><img src="test.jpg" class="img-responsive"></a><center>Cool Project #9</center></div></div>
-  <div class="col-sm-3"></div>
-</div> -->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Wyatt Wismer</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
 
-</body>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2 "><span class="black z-depth-4">Software Developer</span></h1>
+        <div class="row center">
+          <h5 class="header col s12 light white-text"><span class="black z-depth-4"><b class="green-text">Python</b> Puzzler and Occasional <b class="blue-text">Optimization</b> Nerd</span></h5>
+        </div>
+        <div class="row center">
+          <a href="resume.pdf" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Resume</a>
+          </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="niceIso.png" alt="Isometric Cubes"></div>
+  </div>
+
+
+  <div id="about" class="container scrollspy">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">perm_identity</i></h2>
+            <h5 class="center">Who am I?</h5>
+
+            <p class="light">I'm a second year student at McMaster studying Software Engineering. I'm passionate about optimization in algorithm design and compete at the <a href="http://blog.macacm.org/2016/10/icpc-2016-mcmaster-programmers-are-lit.html">ACM International Collegiate Programming Contest</a> as well as on <a href="https://www.hackerrank.com/WyattWismer">HackerRank</a>.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">dashboard</i></h2>
+            <h5 class="center">Inspiration</h5>
+            <blockquote>
+              "In algorithms, as in life, persistence usually pays off."<br>
+              <b>―Steven Skiena,<br> The Algorithm Design Manual</b>
+            </blockquote>
+            </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+            <h5 class="center">Language Proficiency</h5>
+            <div>
+              <table>
+                <tbody>
+                  <tr class="">
+                    <td>Python</td>
+                    <td>★★★★★</td>
+                  </tr>
+                  <tr class="">
+                    <td>C++</td>
+                    <td>★★★★</td>
+                  </tr>
+                  <tr class="">
+                    <td>Java</td>
+                    <td>★★★★</td>
+                  </tr>
+                  <tr class="">
+                    <td>JavaScript</td>
+                    <td>★★★</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  
+  <div id="projects" class="carousel carousel-slider center scrollspy" data-indicators="true">
+    <!--<div class="carousel-fixed-item center">
+      <a class="btn waves-effect white grey-text darken-text-2">View</a>
+    </div>-->
+    <div class="carousel-item amber white-text" href="">
+      <h2>PytchControl</h2>
+      <p class="white-text light nu">control your computer through changes in pitch</p>
+      <div><b style="font-size:110px;">♫</b></div>
+      <a class="btn waves-effect white grey-text darken-text-2" href="https://github.com/WyattWismer/PytchControl">View</a>
+    </div>
+    <div class="carousel-item blue white-text" href="">
+      <h2>IsoRender</h2>
+      <p class="white-text light nu">edit isometric figures in browser</p>
+      <div><b style="font-size:110px;">◇</b></div>
+      <a class="btn waves-effect white grey-text darken-text-2" href="IsoRender/isoRender.html">View</a>
+    </div>
+    <div class="carousel-item green white-text" href="">
+      <h2>SpaceDust</h2>
+      <p class="white-text light nu">flash based gravity simulation</p>
+      <div><b style="font-size:110px;">❂</b></div>
+      <a class="btn waves-effect white grey-text darken-text-2" href="SpaceDust/spaceDust.html">View</a>
+    </div>
+  </div>
+
+
+  <div id="experience" class="parallax-container valign-wrapper scrollspy">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light"></h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="1L.jpg" alt="Whitefish under magnification"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Experience</h4>
+          <p class="left-align light">During the past semester of class I worked with <b>OpenCV</b> to develop the Whitefish Measuring Tool (WFMT), an application to assist researchers with the measurement of Whitefish. WFMT applies <b>thresholding</b> with <b>minimum fitting polygons</b> to automate standard measurements. With built in data entry and feature measurement WFMT is able to dramatically reduce the work load on researchers, increasing efficiency by <b>280%</b>. This summer I am completing a CO-OP term with Hatch, developing <b>Python</b> based software for the <b>Industrial Internet of Things</b>. At Hatch there is an emphasis placed on writing robust code to handle all eventualities; in meeting this goal I have gained experience with <b>multithreading</b>, <b>Linux daemons</b>, and <b>sockets</b>. </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <footer class="page-footer teal">
+    <div class="container scale-out">
+      <div class="row">
+        <div class="col l8 s12">
+          <h5 class="white-text">More Info</h5>
+          <p class="grey-text text-lighten-4">..-. . . .-.. / ..-. .-. . . / - --- / -.-. --- -. - .- -.-. - / -- . / .. ..-. / -.-- --- ..- / .... .- ...- . / .- / -.-. --- --- .-.. / -.-. --- -. -.-. . .--. - / - --- / .. -- .--. .-.. . -- . -. - / --- .-. / .. ..-. / -.-- --- ..- .----. -.. / .--- ..- ... - / .-.. .. -.- . / - --- / - .- .-.. -.- / --- ...- . .-. / ... --- -- . / .- .-.. --. --- .-. .. - .... -- / .--. .-. --- -... .-.. . -- ... --..-- / .. .----. -- / .- .-.. .-- .- -.-- ... / --- .--. . -. / - --- / .--. ..- .-. ... ..- .. -. --. / -. . .-- / .. -.. . .- ...</p>
+
+
+        </div>
+        <div class="col l1 s12">
+          <h5 class="white-text"></h5>
+          <ul>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+            <li><a class="white-text" href="#!"></a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.linkedin.com/in/wyatt-wismer-a64b35126/">Linkedin</a></li>
+            <li><a class="white-text" href="https://github.com/WyattWismer">GitHub</a></li>
+            <li><a class="white-text" href="https://www.hackerrank.com/WyattWismer">HackerRank</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <span>View on <a class="brown-text text-lighten-3" href="https://github.com/WyattWismer/wyattwismer.github.io">GitHub</a><span>
+      <span class="right">Image provided by Northern Ontario School of Medicine</span>
+      </div>
+      
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
