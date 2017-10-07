@@ -64,7 +64,20 @@ footer.page-footer {
   font-weight: 400;
 }
 
+.bullet{
+  font-weight: 400;
+  font-size: 2rem;
+}
 
+.bullet-text{
+  line-height: 1rem;
+  
+}
 
+.list{
+  margin-top: 0;
+}
 
-
+.exp-sec{
+  margin-bottom: 0.5rem;
+}
