@@ -81,3 +81,19 @@ footer.page-footer {
 .exp-sec{
   margin-bottom: 0.5rem;
 }
+
+.faded-text{
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.faded-text:hover{
+  opacity: 1;
+}
+
+#encoded{
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
